@@ -1,2 +1,3 @@
 language = "c"
-run = "gcc -Wall ctimage.c -o ctimage -lm; ./ctimage"
+#run = "if gcc -Wall ctimage.c -o ctimage -lm; then ./ctimage; fi"
+run = "if gcc -Wall ctimage.c -o ctimage -lm; then clear; fi"
